@@ -104,7 +104,7 @@ Run the following command to install the necessary cocoa pods:
 rm -rf ios/Pods && rm -f ios/Podfile.lock && npx pod-install
 ```
 
-Open the generated `.xcworkspace` project in Xcode, open `Info.plist`, and add a new property `NSCameraUsageDescription`; this is required in order to ask for permission to use the camera for AR.
+Open the generated `.xcworkspace` project in Xcode, open `Info.plist`, and add a new property `Privacy - Camera Usage Description` (or paste in the string `NSCameraUsageDescription`); this is required in order to ask for permission to use the camera for AR.
 ![NSCameraUsageDescription](https://conjurekit.azureedge.net/demos/prn-1.png)
 
 In your Unity project's Packages directory, find the `Auki Labs ConjureKit/Runtime/Plugins/iOS/PosemeshAmplitude/PosemeshAmplitude.framework` file.
