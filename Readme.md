@@ -78,11 +78,17 @@ public class ReactNativeBridge : MonoBehaviour
     }
 }
 ```
+## Before you begin
+
+There are a few things you need to do before getting started with this project:
+1. Set up your development environment by following the steps in the [Posemesh SDK's Quickstart guide](https://conjurekit.dev/unity/quickstart/).
+2. [Create and set up a domain](https://posemesh.org/welcome) in a physical location.
+3. Download this repo (the React Native project).
+4. Download the [Unity component of this project](https://github.com/aukilabs/simple-persistent-ar-experience/tree/tutorial/posemesh-react-native) (`tutorial/posemesh-react-native` branch) and replace `YOUR_APP_KEY` and `YOUR_APP_SECRET` in `Assets/Scripts/PersistentARinDomain.cs` with your own credentials.
+
 ## Build and run the project
 
 ### 1. Build the UnityFramework
-
-Download the [Unity component of this project](https://github.com/aukilabs/simple-persistent-ar-experience/tree/tutorial/posemesh-react-native) (`tutorial/posemesh-react-native` branch) and replace `YOUR_APP_KEY` and `YOUR_APP_SECRET` in `Assets/Scripts/PersistentARinDomain.cs` with your own credentials.
 
 Follow [steps 2-3 from this tutorial](https://medium.com/@selvaannies/integrating-unity-into-react-native-ios-using-azesmway-react-native-unity-b09837a54a69) to prepare and build the Unity project as a framework. The resulting `UnityFramework.framework` file can be copied to the `unity/builds/ios` folder.
 
